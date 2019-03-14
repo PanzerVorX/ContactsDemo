@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <EditText
+      android:id="@+id/find"
+      android:layout_width="280dp"
+      android:layout_height="65dp"
+      android:hint="输入查找的联系人姓名或号码"
+      android:maxLines="1"
+      android:textSize="18sp"
+      android:gravity="bottom"
+      />
+
+  <Button
+      android:id="@+id/insert"
+      android:layout_width="80dp"
+      android:layout_height="60dp"
+      android:layout_alignParentRight="true"
+      android:layout_centerInParent="true"
+      android:textSize="10dp"
+      android:text="添加联系人"/>
+
+</RelativeLayout>
+
+  <ListView
+      android:id="@+id/list"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+  </ListView>
+
+</LinearLayout>
